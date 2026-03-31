@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sorry Diya ❤️</title>
+<style>
+    body {
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #ff9a9e, #fad0c4);
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    h1 {
+        color: #fff;
+        margin-top: 50px;
+    }
+
+    p {
+        font-size: 20px;
+        color: #fff;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 18px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin: 20px;
+        position: absolute;
+    }
+
+    #yes {
+        background-color: #28a745;
+        color: white;
+        left: 40%;
+        top: 60%;
+    }
+
+    #no {
+        background-color: #dc3545;
+        color: white;
+        left: 55%;
+        top: 60%;
+    }
+
+    #message {
+        font-size: 24px;
+        color: white;
+        margin-top: 30px;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>I'm Sorry Diya 😔❤️ Meri Jaan</h1>
+
+<p>
+I know I made mistakes and hurt you... and I truly regret it.  
+You mean a lot to me, more than I can explain.  
+Please forgive me and give me one more chance to make things right 💙  
+i dont know how to say i am boring yrr i dont have really so much of gossips to talk
+so pls pls sorry and to say this i made this html code
+</p>
+
+<button id="yes" class="btn" onclick="yesClicked()">Yes 💖</button>
+<button id="no" class="btn" onmouseover="moveNo()">No 😜</button>
+
+<div id="message"></div>
+
+<script>
+function yesClicked() {
+    document.getElementById("message").innerHTML = 
+    "Yayyy!! 🥹❤️ Thank you for forgiving me sahiba (diya)! I promise I'll be better 💙";
+}
+
+function moveNo() {
+    var noBtn = document.getElementById("no");
+    var x = Math.random() * (window.innerWidth - 100);
+    var y = Math.random() * (window.innerHeight - 50);
+
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
